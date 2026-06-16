@@ -1,0 +1,10 @@
+data/raw/
+outputs/
+
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+venv/
+.env/
