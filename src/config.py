@@ -13,27 +13,24 @@ SEGMENTS_FILE  = OUTPUTS / "rfm_segments.csv"
  
 # ── Data cleaning ──────────────────────────────────────────────────────────────
  
-# Coloanele pe care le asteptam in dataset
 EXPECTED_COLUMNS = [
     "InvoiceNo", "StockCode", "Description", "Quantity",
     "InvoiceDate", "UnitPrice", "CustomerID", "Country"
 ]
  
-# Filtrare outlieri: comenzi cu cantitate sau pret prea mari
+# ── Filtering ─────────────────────────────────────────────────────────────────
 MAX_QUANTITY  = 10_000
 MAX_UNITPRICE = 5_000
  
 # ── Clustering ─────────────────────────────────────────────────────────────────
  
-# Range de K pentru Elbow Method
 K_MIN = 2
 K_MAX = 10
  
-# K-ul ales final (actualizat dupa ce vedem graficul Elbow)
 K_OPTIMAL = 4
  
 KMEANS_RANDOM_STATE = 42
-KMEANS_N_INIT       = 10   # cate initializari face K-Means (ia cel mai bun)
+KMEANS_N_INIT       = 10
  
 # ── Classifier ─────────────────────────────────────────────────────────────────
  
