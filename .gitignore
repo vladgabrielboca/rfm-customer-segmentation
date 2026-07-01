@@ -5,7 +5,8 @@ __pycache__/
 *.pyc
 *.pyo
 .Python
-test_plot.py
+testing*.py
 
 venv/
 .env/
+.idea/
